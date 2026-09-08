@@ -1,0 +1,17 @@
+#nilai_3023
+#Deklarasi variabel dengan tipe data boolean
+is_lulus = True
+is_cumlaude = True
+
+#menggunakan Boolean
+nilai = 85
+batas_lulus = 75
+
+#menentukan nilai Boolean dari kondisi
+status_kelulusan = nilai >= batas_lulus  #hasilnya akan True
+
+print("=== Check Kelulusan ===")
+print("Nilai:", nilai)
+print("Apakah Lulus?:", status_kelulusan)
+if is_lulus and is_cumlaude:
+    print("Selamat, Anda lulus dengan predikat Cum Laude!")
