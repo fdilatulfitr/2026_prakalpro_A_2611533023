@@ -1,12 +1,13 @@
-#program pertama
+#nama_3023
+nama = "Fadilatul Fitri"
+jenis_kelamin = 'P'
+alamat = """
+    Sumatera Barat
+    Solok Selatan
+    kec . Solok Selatan
 """
-komentar
-dua baris atau lebih
-pertemuan 1 praktikum alpro
-"""
-print("Hello world")
-print()
-print("program ini menghasilkan")
-print("empat baris output")
-print("/ \\ // \\\\ /// \\\\\\")
-print("program ini" + "dibuat oleh a/n"+"Fadilatul Fitri 2611533023")
+agama = 'islam'
+print("Nama saya adalah", nama)
+print("Jenis kelamin saya adalah", jenis_kelamin)
+print("Alamat saya adalah", alamat)
+print("Agama saya adalah", agama)
