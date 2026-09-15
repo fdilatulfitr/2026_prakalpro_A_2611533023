@@ -1,13 +1,13 @@
 #nama_3023
-nama = "Fadilatul Fitri"
-jenis_kelamin = 'P'
-alamat = """
+nama_3023 = "Fadilatul Fitri"
+jenis_ = 'P'
+alamat_3023 = """
     Kampus Unand
     kec . pauh
     kota padang
 """
-agama = 'islam'
-print("Nama saya adalah", nama)
-print("Jenis kelamin saya adalah", jenis_kelamin)
-print("Alamat saya adalah", alamat)
-print("Agama saya adalah", agama)
+agama_3023 = 'islam'
+print("Nama saya adalah", nama_3023)
+print("Jenis kelamin saya adalah", jenis_)
+print("Alamat saya adalah", alamat_3023)
+print("Agama saya adalah", agama_3023)
