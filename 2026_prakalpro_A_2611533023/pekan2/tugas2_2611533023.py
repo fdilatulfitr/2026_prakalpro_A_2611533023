@@ -17,10 +17,8 @@ print("Umur :",umur_3023, "Tahun|tipe:", type(umur_3023))
 print("skor tes awal :", skor_tes_awal_3023, "|tipe:", type(skor_tes_awal_3023))
 print("id token awal :", id_token_sinyal_3023, "|tipe:", type(id_token_sinyal_3023))
 print("=== STATUS KELULUSAN ===")
-batas_3023 = 75.0
-if skor_tes_awal_3023 >= batas_3023:
-    hasil_3023 = True
-else:
-    hasil_3023 = False
+from typing import Final
+batas_3023: Final = 75.0
+hasil_3023 = skor_tes_awal_3023 >= batas_3023
 print("Batas Minimum Nilai:", batas_3023 )
 print("Apakah Dinyatakan Lulus?:", hasil_3023, "|tipe:", type(hasil_3023))
