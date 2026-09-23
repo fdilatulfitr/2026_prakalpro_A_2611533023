@@ -27,7 +27,7 @@ nominal_diskon_3023 = total_belanja_3023 * (total_diskon_persen_3023 / 100)
 total_bayar_3023 = total_belanja_3023 - nominal_diskon_3023
 
 #output hasil
-print("\n--- rincian pembeyaran ---")
+print("\n--- rincian pembayaran ---")
 print(f"total diskon : {total_diskon_persen_3023}% (rp {nominal_diskon_3023:,.0f})")
 print(f"total bayar :rp {total_bayar_3023:,.0f}")
 
