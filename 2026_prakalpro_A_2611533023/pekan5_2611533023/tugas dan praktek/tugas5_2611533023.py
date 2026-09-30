@@ -1,43 +1,48 @@
-# === program jam pasir kristal palindromik (pekan 5) ===
-print("=== PROGRAM JAM PASIR KRISTAL PALINDROMIK (PEKAN 5) ===")
-n_3023 = int(input("masukan ukuran skala jam pasir (N): "))
+# === PROGRAM JAM PASIR KRISTAL PALINDROMIK (PEKAN 5) ===
 
-#-------------------------------------------------------
-# 1. bingkai pembatas horizontal atas
-#-------------------------------------------------------
+print("=== PROGRAM JAM PASIR KRISTAL PALINDROMIK (PEKAN 5) ===")
+n_3023 = int(input("Masukkan ukuran skala jam pasir (N): "))
+
+# --------------------------------------------------
+# 1. Bingkai Pembatas Horizontal Atas
+# --------------------------------------------------
 print("#", end="")
 for i_3023 in range(4 * n_3023 + 5):
     print("=", end="")
 print("#")
-#-------------------------------------------------------
-#2. fase 1: jam pasir atas (reduksi angka menurun: N turun s.d. 1)
-#-------------------------------------------------------
-for baris_3023 in range (n_3023, 0, -1):
-    #sisi kiri dibatasi garis tegak (|) dan satu spasi padding
-    print(" ", end="")
-#deret angka mundur dari baris turun ke 1
-for angka_3023 in range(baris_3023, 0, -1):
-    print(angka_3023, end="")
-    print(" ", end="")
 
-#poros kristal tengah
-print("<*>", end="")
-
-#deret angka maju dari 1 naik ke baris
-for angka_3023 in range (1, baris_3023 + 1):
-    print(" ", end="")
-    print(angka_3023, end="")
-
-#spasi penyeimbang kanan
-for spasi_3023 in range (2 * (n_3023 - baris_3023)):
-    print(" ", end="")
-
-    #sisi kanan
+# --------------------------------------------------
+# 2. Fase 1: Jam Pasir Atas (Reduksi Angka Menurun: N turun s.d. 1)
+# --------------------------------------------------
+for baris_3023 in range(n_3023, 0, -1):
+    print("| ", end="")
+    
+    # Spasi penyeimbang kiri
+    for spasi_3023 in range(2 * (n_3023 - baris_3023)):
+        print(" ", end="")
+        
+    # Deret angka mundur dari baris turun ke 1
+    for angka_3023 in range(baris_3023, 0, -1):
+        print(angka_3023, end="")
+        print(" ", end="")
+            
+    # Poros kristal tengah
+    print("<*>", end="")
+    
+    # Deret angka maju dari 1 naik ke baris
+    for angka_3023 in range(1, baris_3023 + 1):
+        print(" ", end="")
+        print(angka_3023, end="")
+        
+    # Spasi penyeimbang kanan
+    for spasi_3023 in range(2 * (n_3023 - baris_3023)):
+        print(" ", end="")
+        
     print(" |")
 
-#------------------------------------------------------
-#3. fase 2: poros titik pusat jam pasir (titik nol / singularity)
-#------------------------------------------------------
+# --------------------------------------------------
+# 3. Fase 2: Poros Titik Pusat Jam Pasir (Titik Nol / Singularity)
+# --------------------------------------------------
 print("|", end="")
 for spasi_3023 in range(2 * n_3023 + 1):
     print(" ", end="")
@@ -46,40 +51,38 @@ for spasi_3023 in range(2 * n_3023 + 1):
     print(" ", end="")
 print("|")
 
-#-------------------------------------------------------
-# 4. fase 3: jam pasir bawah (ekspansi angka menaik: 1 naik s.d. N) 
-#-------------------------------------------------------
+# --------------------------------------------------
+# 4. Fase 3: Jam Pasir Bawah (Ekspansi Angka Menaik: 1 naik s.d. N)
+# --------------------------------------------------
 for baris_3023 in range(1, n_3023 + 1):
-    #sisi kiri dibatsai garis tegak(|) dan satu spasi padding 
     print("| ", end="")
-
-    #spasi penyeimbang kiri: 2 * (N - baris)
-    for spasi_3023 in range (2 * (n_3023 - baris_3023)):
+    
+    # Spasi penyeimbang kiri
+    for spasi_3023 in range(2 * (n_3023 - baris_3023)):
         print(" ", end="")
-
-    #deret angka mundur dari baris turun ke 1
+        
+    # Deret angka mundur dari baris turun ke 1
     for angka_3023 in range(baris_3023, 0, -1):
         print(angka_3023, end="")
         print(" ", end="")
-
-    #poros kristal tengah
+            
+    # Poros kristal tengah
     print("<*>", end="")
-
-    #deret angka maju dari 1 naik ke baris
+    
+    # Deret angka maju dari 1 naik ke baris
     for angka_3023 in range(1, baris_3023 + 1):
         print(" ", end="")
         print(angka_3023, end="")
-
-    #spasi penyeimbang kanan
+        
+    # Spasi penyeimbang kanan
     for spasi_3023 in range(2 * (n_3023 - baris_3023)):
         print(" ", end="")
-
-    # sisi kanan
+        
     print(" |")
 
-#----------------------------------------------------------
-# 5. bingkai pembatas horizontal bawah
-#----------------------------------------------------------
+# --------------------------------------------------
+# 5. Bingkai Pembatas Horizontal Bawah
+# --------------------------------------------------
 print("#", end="")
 for i_3023 in range(4 * n_3023 + 5):
     print("=", end="")
