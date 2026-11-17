@@ -9,8 +9,18 @@ print(full_name.title())
 
 
 
-full_name = "  Siti Aisyah  "
-nim = "2610511023"
-Username = first
+full_name = "Fadilatul Fitri"
+nim = "2611533023"
+
+clean = full_name.strip()
+space = clean.find(" ")
+
+if space == -1:
+    first = clean.lower()
+else:
+    first = clean[:space].lower()
+
+username = first + nim[-3:]
+print(username)
 # Build the username: first name in lowercase + last 3 digits of the NIM.
 # Do not use split().

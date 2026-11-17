@@ -7,6 +7,8 @@ print (text.upper())
 print (text[0:20])
 
 
+
+
 text = "Fadilatul Fitri"
 count = 0
 for char in text.lower():
